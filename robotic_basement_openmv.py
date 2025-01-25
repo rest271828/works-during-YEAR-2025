@@ -17,6 +17,8 @@ pin2 = Pin('P2', Pin.OUT, Pin.PULL_NONE)
 
 pin8 = Pin('P8', Pin.IN, Pin.PULL_DOWN)
 
+#######################由于arduino串口通信uart的通信容易出现问题并且只有一个uart串口，故选择进行pin引脚来进行上位机与下位机的通信
+
 # 控制灯的颜色，方便判断在task01还是task02
 red_led = LED(1)  # 1代表红色LED
 blue_led = LED(3)  # 3代表蓝色LED
